@@ -1,3 +1,4 @@
+
 <?php
 if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 
@@ -45,16 +46,16 @@ function bo_count($bo){
 
 <style>
 /* mobile */
-@media (min-width: 1px) and (max-width: 1089px) {
-	/* .ety-main{margin-bottom:63px;} */
-}
+/* @media (min-width: 1px) and (max-width: 1089px) {
+	.ety-main{margin-bottom:63px;}
+} */
 
 /* desktop */
-@media (min-width: 1090px) {
-	/* .ety-main{margin-bottom:110px;} */
-}
+/* @media (min-width: 1090px) {
+	.ety-main{margin-bottom:110px;}
+} */
 </style>
-<div class="ety-main"></div>
+<!-- <div class="ety-main"></div> -->
 
 
 

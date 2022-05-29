@@ -16,7 +16,7 @@ include_once(G5_THEME_PATH.'/head.php');
 ?>
 
 
-
+<?php include_once('./_common.php');?>  
 
 <?php 
 /**************************************************************************
@@ -48,48 +48,15 @@ http://ety.kr/board/qa
 
 
 
-<!-------------------------- 슬라이드 -------------------------->
-<header>
-  <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5000">
-	<ol class="carousel-indicators">
-	  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-	  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-	  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-	</ol>
-	<div class="carousel-inner" role="listbox">
-	  <!-- Slide One - Set the background image for this slide in the line below -->
-	  <div class="carousel-item active" style="background-image: url('https://via.placeholder.com/2560x740')">
-		<div class="carousel-caption d-md-block">
-		</div>
-	  </div>
-	  <!-- Slide Two - Set the background image for this slide in the line below -->
-	  <div class="carousel-item" style="background-image: url('https://via.placeholder.com/2560x740')">
-		<div class="carousel-caption d-md-block">
-		  <h3 class="ks4">반응형 비즈니스 테마</h3>
-		  <p class="ks4 f20">CMS 인 그누보드 5.4 와 연동되어 사용가능한 테마 입니다.</p>
-		</div>
-	  </div>
-	  <!-- Slide Three - Set the background image for this slide in the line below -->
-	  <div class="carousel-item" style="background-image: url('https://via.placeholder.com/2560x740')">
-		<div class="carousel-caption d-md-block">
-		  <h3 class="ks4">테마몰 오픈</h3>
-		  <p class="ks4 f20">테마몰을 오픈하였습니다.</p>
-		</div>
-	  </div>
-	</div>
-	<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-	  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-	  <span class="sr-only">Previous</span>
-	</a>
-	<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-	  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-	  <span class="sr-only">Next</span>
-	</a>
-  </div>
-</header>
+
+
 <!-------------------------- ./슬라이드 -------------------------->
-
-
+<div id="mainSlider" class="overflow-hidden">
+	<div class="sliderBox position-relative">
+		<?php echo latest('swiper_card2', 'mainbanner',2,100)?>
+	</div> 
+</div>	
+<!-------------------------- 슬라이드 -------------------------->
 
 
 
@@ -98,11 +65,11 @@ http://ety.kr/board/qa
 <div class="margin-top-100"></div>
 <div class="container">
 	<div class="center-heading ks4">
-		<h2>WIDE FREE <strong>THEME</strong> </h2>
-		<span class="center-line"></span>
+		<h2>HBAF 만의<strong>프로모션</strong></h2>
+		<!-- <span class="center-line"></span>
 		<p class="sub-text margin-bottom-80 ks5 f19">
 		무료 폰트어썸5 버전을 사용합니다. 폰트어썸5 프로버전은 사용하지 않습니다.
-		</p>
+		</p> -->
 	</div>
 
 	<div class="row padding-top-20">

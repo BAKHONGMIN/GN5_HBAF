@@ -1,10 +1,12 @@
 /* mobile */
 @media (min-width: 1px) and (max-width: 1089px) {
-
 	.fixed-header {display:none;}
 	.login{display:block}
 	.mpage{display:block;}
 	.spage{overflow-x:auto;white-space: nowrap;}
+	#tnb_index_left{
+		display: none;
+	}
 	
 }
 
@@ -27,31 +29,11 @@
 	.top-line { background:#333333; }
 	.fixed-top {
 		position: fixed;
-		/* top: 34px; */
 		right: 0;
 		left: 0;
 		z-index: 1030;
 	}
-	.navbar-nav{
-		margin:0 auto;
-	}
-	.bg-img{
-		background-image: url("/HBAF/theme/theme_wide_16/myimg/bg_header_1920.png");
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: top left;
-		z-index: 10000;
-		position: absolute;
-	}
-	.navbar{
-		/* position: relative; */
-		top: 0;
-	}
-	.logoimg{
-		position: absolute;
-		bottom: 0;
-		margin-bottom:-50px;
-	}
+
 
 }
 
@@ -75,9 +57,6 @@
 }
 
 .carousel-item a{color:#fff;}
-.mt-50px{
-	margin-top:100px;
-}
 
 /* 네비게이션 수정 */
 .dropdown-menu {

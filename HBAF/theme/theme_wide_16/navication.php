@@ -1,6 +1,4 @@
-
-<!-------------------------- 네비게이션 -------------------------->
-
+<?php include_once('./_common.php');?>  
 <style>
 .collapse.in{
     -webkit-transition-delay: 4s;
@@ -8,15 +6,15 @@
     visibility: visible;
 }
 </style>
-<nav class="navbar fixed-top navbar-expand-lg navbar-white bg-img fixed-top">
-<div class="logoimg"><a class="" href="<?php echo G5_URL?>" class=""><img src="<?php echo G5_THEME_URL?>/myimg/logoimg.png" alt="logoimg" width="200px"></a></div>
-  <div class="container mb-5">
-	<a class="navbar-brand" href="<?php echo G5_URL?>" class="logo"><img src="<?php echo G5_THEME_URL?>/myimg/logo.png" alt="logo" width="130px"></a>
-	<button class="navbar-toggler navbar-dark navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar fixed-top navbar-expand-lg fixed-top backimg">
+<a class="logoimg" href="<?php echo G5_URL?>" class="logoimg"><img src="<?php echo G5_THEME_URL?>/myimg/logoimg.png" alt="logoimg"></a>
+  <!-- <div class="container"> -->
+	<a class="navbar-brand" href="<?php echo G5_URL?>" class="logo"><img src="<?php echo G5_THEME_URL?>/myimg/logo.png" alt="logo" width="100px"></a>
+	<button class="navbar-toggler  ml-auto navbar-dark navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 	  <span class="navbar-toggler-icon"></span>
 	</button>
 	<div class="collapse navbar-collapse" id="navbarResponsive" data-hover="dropdown" data-animations="fadeIn fadeIn fadeInUp fadeInRight">
-	  <ul class="navbar-nav ml-auto">
+	  <ul class="navbar-nav ml">
 		<?php
 		$sql = " select *
 					from {$g5['menu_table']}
@@ -102,5 +100,14 @@
 		</li>
 	  </ul>
 	</div>
-  </div>
+  <!-- </div> -->
+  				<div id="tnb_index_left">
+					<!-- social -->
+					<div class="sns_icon">
+					<a href="https://www.youtube.com/channel/UCTpHu2hMrWaf2p_U4pP-HIA" target="_blank"><img src="/HBAF/theme/theme_wide_16/myimg/youtube.png" alt="youtube" width="25px"></a>
+					</div>
+					<div class="sns_icon">
+					<a href="https://www.instagram.com/hbaf_official/" target="_blank"><img src="/HBAF/theme/theme_wide_16/myimg/instar.png" alt="instar" width="25px"></a>
+					</div>
+				</div>
 </nav>
