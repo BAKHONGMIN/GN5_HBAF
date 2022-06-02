@@ -1,0 +1,18 @@
+.promotion1_1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.promotion1_1 img{
+    width: 220px;
+    height: 220px;
+}
+.space{
+    text-align: center !important;
+    font-size:30px;
+    margin-top:20px !important;
+    font-weight: bold !important;
+    line-height: 30px;
+    margin-bottom: 20px;
+}

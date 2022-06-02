@@ -63,65 +63,42 @@ http://ety.kr/board/qa
 
 <!-------------------------- 아이콘박스 -------------------------->
 <div class="margin-top-100"></div>
+<div class="promotino_wrapper">
+<div class="almond"><img src="/HBAF/theme/theme_wide_16/myimg/amond.png" alt="almond" ></div>
+<div class="almond1"><img src="/HBAF/theme/theme_wide_16/myimg/amond.png" alt="almond" ></div>
 <div class="container">
-	<div class="center-heading ks4">
-		<h2>HBAF 만의<strong>프로모션</strong></h2>
+	<div class="center-heading ks5">
+		<!-- <h2>HBAF 만의<strong>프로모션</strong></h2> -->
 		<!-- <span class="center-line"></span>
 		<p class="sub-text margin-bottom-80 ks5 f19">
 		무료 폰트어썸5 버전을 사용합니다. 폰트어썸5 프로버전은 사용하지 않습니다.
 		</p> -->
+		<h2><?php echo latest('collection', 'promotion',1,100)?></h2>
 	</div>
 
 	<div class="row padding-top-20">
-		<div class="col-lg-3 col-md-3 col-sm-12 col-12">
+		<div class="col-lg-3 col-md-3 col-sm-12 ">
 			<div class="box">							
-				<div class="icon">
-					<div class="info-pink">
-						<i class="fas fa-chart-line"></i>
-						<p class="ks4 f15 h75">
-							애플사의 IOS 부터 안드로이드 운영체제까지 모두 지원되는 무료 비즈니스 반응형 홈페이지 입니다.
-						</p>
-						<div class="margin-top-20 margin-bottom-20">
-							<button type="button" class="btn btn-secondary btn-sm ks4" onclick="location.href='#'">바로가기</button>
-						</div>
-					</div>
-				</div>
-				<div class="space"></div>
+				<div class="promotion promotion1"><?php echo latest('promotion', 'promotion1',1,100)?></div>
+				<div class="space"><?php echo latest('collection', 'promotion1',1,100)?></div>
+				
+			</div> 
+		</div>
+		<!-- ./col -->
+		<div class="col-lg-3 col-md-3 col-sm-12 ">
+			<div class="box">							
+				<div class="promotion promotion2"><?php echo latest('promotion', 'promotion2',1,100)?></div>
+				<div class="space"><?php echo latest('collection', 'promotion2',1,100)?></div>
+			</div> 
+		</div>
+		<!-- ./col -->
+		<div class="col-lg-3 col-md-3 col-sm-12 ">
+			<div class="box">							
+				<div class="promotion promotion3"><?php echo latest('promotion', 'promotion3',1,100)?></div>
+				<div class="space"><?php echo latest('collection', 'promotion3',1,100)?></div>
 			</div> 
 		</div><!-- ./col -->
-		<div class="col-lg-3 col-md-3 col-sm-12 col-12">
-			<div class="box">							
-				<div class="icon">
-					<div class="info-pink-2">
-						<i class="fas fa-cloud-moon-rain"></i>
-						<p class="ks4 f15 h75">
-							갤럭시 시리즈의 모든 기종에서도 문제 없이 최적화된 사이트로 적용됩니다.
-						</p>
-						<div class="margin-top-20 margin-bottom-20">
-							<button type="button" class="btn btn-secondary btn-sm ks4" onclick="location.href='#'">바로가기</button>
-						</div>
-					</div>
-				</div>
-				<div class="space"></div>
-			</div> 
-		</div><!-- ./col -->
-		<div class="col-lg-3 col-md-3 col-sm-12 col-12">
-			<div class="box">							
-				<div class="icon">
-					<div class="info">
-						<i class="fas fa-cog"></i>
-						<p class="ks4 f15 h75">
-							갤럭시 시리즈의 모든 기종에서도 문제 없이 최적화된 사이트로 적용됩니다.
-						</p>
-						<div class="margin-top-20 margin-bottom-20">
-							<button type="button" class="btn btn-secondary btn-sm ks4" onclick="location.href='#'">바로가기</button>
-						</div>
-					</div>
-				</div>
-				<div class="space"></div>
-			</div> 
-		</div><!-- ./col -->
-		<div class="col-lg-3 col-md-3 col-sm-12 col-12">
+		<!-- <div class="col-lg-3 col-md-3 col-sm-12 col-12">
 			<div class="box">							
 				<div class="icon">
 					
@@ -137,47 +114,28 @@ http://ety.kr/board/qa
 				</div>
 				<div class="space"></div>
 			</div> 
-		</div><!-- ./col -->
+		</div> -->
+		<!-- ./col -->
 	</div><!-- /row -->
 
 	<div class="d-none d-sm-block margin-top-30"></div><!-- pc 만 적용 -->
 
 	<!-------------------------- 두번째줄 -------------------------->
 	<div class="row">
-		<div class="col-lg-3 col-md-3 col-sm-12 col-12">
+		<div class="col-lg-3 col-md-6 col-sm-12">
 			<div class="box">							
-				<div class="icon">
-					<div class="info">
-						<i class="far fa-hospital"></i>
-						<p class="ks4 f15 h75">
-							애플사의 IOS 부터 안드로이드 운영체제까지 모두 지원되는 무료 비즈니스 반응형 홈페이지 입니다.
-						</p>
-						<div class="margin-top-20 margin-bottom-20">
-							<button type="button" class="btn btn-secondary btn-sm ks4" onclick="location.href='#'">바로가기</button>
-						</div>
-					</div>
-				</div>
-				<div class="space"></div>
+				<div class="promotion promotion4"><?php echo latest('promotion', 'promotion4',1,100)?></div>
+				<div class="space"><?php echo latest('collection', 'promotion4',1,100)?></div>
 			</div> 
 		</div><!-- /col -->
-		<div class="col-lg-3 col-md-3 col-sm-12 col-12">
+		<div class="col-lg-3 col-md-6 col-sm-12">
 			<div class="box">							
-				<div class="icon">
-					<div class="info">
-						<i class="far fa-lightbulb"></i>
-						<p class="ks4 f15 h75">
-							갤럭시 시리즈의 모든 기종에서도 문제 없이 최적화된 사이트로 적용됩니다.
-						</p>
-						<div class="margin-top-20 margin-bottom-20">
-							<button type="button" class="btn btn-secondary btn-sm ks4" onclick="location.href='#'">바로가기</button>
-						</div>
-					</div>
-				</div>
-				<div class="space"></div>
+				<div class="promotion promotion5"><?php echo latest('promotion', 'promotion5',1,100)?></div>
+				<div class="space"><?php echo latest('collection', 'promotion5',1,100)?></div>
 			</div> 
 		</div><!-- /col -->
 
-		<div class="col-lg-3 col-md-3 col-sm-12 col-12">
+		<!-- <div class="col-lg-3 col-md-3 col-sm-12 col-12">
 			<div class="box">							
 				<div class="icon">
 					<div class="info">
@@ -192,9 +150,10 @@ http://ety.kr/board/qa
 				</div>
 				<div class="space"></div>
 			</div> 
-		</div><!-- /col -->
+		</div> -->
+		<!-- /col -->
 
-		<div class="col-lg-3 col-md-3 col-sm-12 col-12">
+		<!-- <div class="col-lg-3 col-md-3 col-sm-12 col-12">
 			<div class="box">							
 				<div class="icon">
 					
@@ -210,8 +169,10 @@ http://ety.kr/board/qa
 				</div>
 				<div class="space"></div>
 			</div> 
-		</div><!-- /col -->
+		</div> -->
+		<!-- /col -->
 	</div><!-- /row -->
+</div>
 	<div class="margin-bottom-40"></div>
 </div><!-- /container -->
 
@@ -219,7 +180,7 @@ http://ety.kr/board/qa
 
 
 <!-------------------------- 게시판 -------------------------->
-<div class="container">
+<!-- <div class="container">
 	<div class="row">
 		<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
 			<?php echo latest('theme/basic_main_one', 'notice', 5, 40);?>
@@ -229,7 +190,7 @@ http://ety.kr/board/qa
 		</div>
 	</div>
 </div>
-<div class="margin-bottom-150"></div>
+<div class="margin-bottom-150"></div> -->
 
 
 
@@ -238,18 +199,40 @@ http://ety.kr/board/qa
 <!-------------------------- pallax box -------------------------->
 <style>
 .para-box{
-    height: 550px; display: grid; align-items: center;
+    height: 650px; display: grid; align-items: center;
 }
 </style>
-<div class="parallax-window" data-parallax="scroll" data-image-src="<?php echo G5_THEME_URL?>/img/bg/1.jpg"><!-- 이미지 주소 -->
+<div class="youtube-window" data-parallax="scroll" data-image-src="<?php echo G5_THEME_URL?>/img/bg/1.jpg"><!-- 이미지 주소 -->
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 para-box text-center">
-				
-				<div class="">
-					<h2 class='text-light ks5'>반응형 커뮤니티 , 반응형 와이드 에티테마 무료 다운로드 바로가기</h2>
+				<!-- <div class="youtubeimg d-none"><iframe width="900" height="600" src="https://www.youtube.com/embed/7WrDQaMOowI?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div> -->
+					<div class="youtubeimg d-none"><?php echo latest('youtube', 'youtubeimg',1,100)?></div>
+					<div class="youtubetext">
+					<h1 class='text-light youtube_font'><?php echo latest('collection', 'youtube',2,100)?></h1>
 					<br />
-					<button type="button" class="btn btn-outline-light ks4" onclick='window.open("about:blank").location.href="http://ety.kr/board/theme_update"'>바로가기</button>
+					<!-- <button type="button" class="btn btn-outline-light ks4" onclick='window.open("about:blank").location.href="http://ety.kr/board/theme_update"'>바로가기</button> -->
+
+					<script type="text/javascript">
+            			//카운트 시작 숫자
+            			var count = 5;
+            			//카운트다운함수
+            			var countdown = setInterval(function(){
+            			//해당 태그에 아래 내용을 출력
+            			$("p.countdown").html("<b><font color='white' size='66pt'>"
+            			+ count + "</font></b>");
+                		//0초면 초기화 후 이동되는 사이트
+                		if (count == 0) {
+                    		clearInterval(countdown);
+                    		// window.open('http://www.olleh.com', "_self");
+							$(".youtubetext").addClass("d-none");
+							$(".youtubeimg").removeClass("d-none");
+                    	}
+                		count--;//카운트 감소
+            			}, 1000);
+        			</script>
+		  			<p class="countdown"></p>
+					<!--//////////////////////////////////////////////////////////////  -->
 				</div>
 			</div>
 
