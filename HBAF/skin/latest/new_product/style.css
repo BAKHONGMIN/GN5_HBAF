@@ -1,0 +1,14 @@
+.card-group{
+    height: 370px;
+    overflow: hidden;
+    position: relative;
+    
+}
+.card-text1{
+    bottom: 5px;
+    position: absolute;
+}
+.card-body{
+    margin: 0 !important;
+    text-align: left;
+}

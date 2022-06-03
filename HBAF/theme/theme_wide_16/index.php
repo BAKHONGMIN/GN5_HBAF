@@ -209,7 +209,7 @@ http://ety.kr/board/qa
 				<!-- <div class="youtubeimg d-none"><iframe width="900" height="600" src="https://www.youtube.com/embed/7WrDQaMOowI?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div> -->
 					<div class="youtubeimg d-none"><?php echo latest('youtube', 'youtubeimg',1,100)?></div>
 					<div class="youtubetext">
-					<h1 class='text-light youtube_font'><?php echo latest('collection', 'youtube',2,100)?></h1>
+					<h1 class='text-black youtube_font'><?php echo latest('collection', 'youtube',2,100)?></h1>
 					<br />
 					<!-- <button type="button" class="btn btn-outline-light ks4" onclick='window.open("about:blank").location.href="http://ety.kr/board/theme_update"'>바로가기</button> -->
 
@@ -219,7 +219,7 @@ http://ety.kr/board/qa
             			//카운트다운함수
             			var countdown = setInterval(function(){
             			//해당 태그에 아래 내용을 출력
-            			$("p.countdown").html("<b><font color='white' size='66pt'>"
+            			$("p.countdown").html("<b><font color='black' size='66pt'>"
             			+ count + "</font></b>");
                 		//0초면 초기화 후 이동되는 사이트
                 		if (count == 0) {
@@ -243,7 +243,7 @@ http://ety.kr/board/qa
 
 <!-------------------------- 테마소개 + 유튜브영상 -------------------------->
 
-<div class="padding-top-120 padding-bottom-140" style="background:#f2f2f2;">
+<!-- <div class="padding-top-120 padding-bottom-140" style="background:#f2f2f2;">
 	<div class="container">
 	<div class="center-heading">
 		<h2 class="en1">USE A <strong>LIBRARY</strong> </h2>
@@ -262,24 +262,35 @@ http://ety.kr/board/qa
 		</div>
 	  </div>
 	</div>
-</div>
+</div> -->
 
 
 
 
-<!-------------------------- 제품안내 갤러리 -------------------------->
+<!-------------------------- 신상품 -------------------------->
 <div class="container margin-top-120 margin-bottom-150">
 	<div class="center-heading margin-top-40">
-		<h2 class="ks4">제품안내</h2>
+		<h2><?php echo latest('collection', 'new_product',1,100)?></h2>
 		<span class="center-line"></span>
-		<p class="sub-text margin-bottom-80 ks5 f19">
+		<!-- <p class="sub-text margin-bottom-80 ks5 f19">
 		해당 제품에 대한 소개내용 입니다.
-		</p>
+		</p> -->
 	</div>
 	<!-- LATEST : pic_basic_company -->
-	<?php echo latest('theme/pic_basic_company', 'gallery', 6, 24); ?>
+	<?php echo latest('new_product', 'new', 4, 24); ?>
 </div>
-
+<!-- -----------------------전체상품--------------------- -->
+<div class="container margin-top-120 margin-bottom-150">
+	<div class="center-heading margin-top-40">
+		<h2><?php echo latest('collection', 'all_product',1,100)?></h2>
+		<span class="center-line"></span>
+		<!-- <p class="sub-text margin-bottom-80 ks5 f19">
+		해당 제품에 대한 소개내용 입니다.
+		</p> -->
+	</div>
+	<!-- LATEST : pic_basic_company -->
+	<?php echo latest('new_product', 'all', 16, 50); ?>
+</div>
 
 
 
