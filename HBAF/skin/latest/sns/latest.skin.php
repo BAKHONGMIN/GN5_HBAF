@@ -21,7 +21,7 @@ $thumb_height = 200;
     }
     $img_content = '<img src="'.$img.'" alt="'.$thumb['alt'].'" >';
     ?>
-		<div class="item"><a href="<?php echo $list[$i]['href'] ?>"><?php echo $img_content; ?></a></div>
+		<div class="item"><a href="https://www.instagram.com/hbaf_official/" target="_blank"><?php echo $img_content; ?></a></div>
 	
 	<?php } ?>
 </div>
