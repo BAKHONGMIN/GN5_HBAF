@@ -31,7 +31,7 @@ $thumb_height = 120;
 <style>
 </style>
 
-        <div class="swiper-slide" onclick="location.href='<?php echo $list[$i]['href'] ?>';" style="cursor: pointer;">
+        <div class="swiper-slide" onclick="location.href='<?php echo $list[$i]['wr_content'];?>';" style="cursor: pointer;">
             <div class="sw_img" style="background-image: url('<?php echo $img_content; ?>'); "></div>                              
         </div>
 

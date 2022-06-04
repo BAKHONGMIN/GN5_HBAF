@@ -1,6 +1,6 @@
 .card-group{
     height: 370px;
-    overflow: hidden;
+    /* overflow: hidden; */
     position: relative;
     
 }

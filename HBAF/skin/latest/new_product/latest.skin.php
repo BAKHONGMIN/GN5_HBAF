@@ -26,7 +26,7 @@ $thumb_height = 300;
 	<div class="col-md-3" style="margin-bottom:20px;">
 		<div class="card-group">
 		  <div class="card">
-			<a href="<?php echo $list[$i]['href'] ?>"><?php echo $img_content; ?></a>
+			<a href="<?php echo $list[$i]['wr_content'];?>" target="_blank"><?php echo $img_content; ?></a>
 			<div class="card-body">
 			  <h5 class="card-title ks4 f17">
 					<?php

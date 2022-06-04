@@ -53,7 +53,7 @@ http://ety.kr/board/qa
 <!-------------------------- ./슬라이드 -------------------------->
 <div id="mainSlider" class="overflow-hidden">
 	<div class="sliderBox position-relative">
-		<?php echo latest('swiper_card2', 'mainbanner',2,100)?>
+		<?php echo latest('swiper_card2', 'mainbanner',5,100)?>
 	</div> 
 </div>	
 <!-------------------------- 슬라이드 -------------------------->
@@ -295,7 +295,7 @@ http://ety.kr/board/qa
 
 
 <!-------------------------- USE A LIBRARY -------------------------->
-<div class="padding-top-120 padding-bottom-140" style="background:#f2f2f2;">
+<!-- <div class="padding-top-120 padding-bottom-140" style="background:#f2f2f2;">
 	<div class="container">
 		<div class="center-heading">
 			<h2 class="en1">USE A <strong>LIBRARY</strong> </h2>
@@ -326,65 +326,16 @@ http://ety.kr/board/qa
 		</div>
 
 	  </div>
-	  <!-- /.row -->
+
 	</div>
-</div>
+</div> -->
 
 
 
 
 
-<!-------------------------- USE A LIBRARY -------------------------->
-<div class="padding-top-120 padding-bottom-140">
-	<div class="container">
-		<div class="center-heading">
-			<h2 class="en1">USE A <strong>LIBRARY</strong> </h2>
-			<span class="center-line"></span>
-		</div>
-		  <div class="row f16">
-
-			<div class="col-lg-6">
-			  <h2 class="en1">JavaScript Library</h2>
-			  <p class="ks4 f20">테마폴더내 라이선스 문서 확인</p>
-			  <ul class="en2">
-				<li><strong>GNUboard5 (5.4.5.1)</strong></li>
-				<li><strong>Bootstrap4</strong></li>
-				<li>jQuery</li>
-				<li>Font Awesome5</li>
-				<li>Working contact form with validation</li>
-				<li>Unstyled page elements for easy customization</li>
-				<li>Parallax</li>
-				<li>Owl</li>
-			  </ul>
-			  <p class="ks5">
-			  현제 제작되는 모든 테마는 에티테마 에서 제작되고 있으며 무료 테마 및 템플릿의 경우에는 이미지가 포함 되어 있지 않습니다. 또한 에티테마로 오시면 추가적인 업데이트된 파일을 다운로드 하실 수 있습니다.</p>
-			</div>
-
-			<div class="col-lg-6 text-right">
-				<img class="img-fluid rounded" src="<?php echo G5_THEME_URL?>/img/s-3.png" alt="">
-			</div>
-
-		  </div>
-	  <!-- /.row -->
-	</div>
-</div>
 
 
-
-
-
-<!-------------------------- parallax 박스 및 countdown -------------------------->
-<div class="parallax-window" data-parallax="scroll" data-image-src="<?php echo G5_THEME_URL?>/img/bg/2.jpg">
-	<div class="container">
-		<div class="row" style="height:550px;">
-
-			<div class="col-md-12 text-center p-center para-text">
-				<h2 class='text-light ks5'>반응형 커뮤니티 , 반응형 와이드 에티테마 무료 다운로드 바로가기</h2>
-				<button type="button" class="btn btn-outline-light ks4" onclick='window.open("about:blank").location.href="http://ety.kr/board/theme_update"'>바로가기</button>
-			</div>
-		</div>
-	</div>
-</div><!-- /parallax -->
 
 
 
@@ -397,10 +348,13 @@ http://ety.kr/board/qa
 테마폴더/tail.php : 43 번째줄에서 수정하시면 됩니다.
 owlcarousel 시간조정, 개수조정, 오토플레이 조정
 -->
-
+<div class="hbaf_sns">
+	<div class="circle_left"></div>
+	<div class="circle_right"></div>
+	<h2><?php echo latest('collection', 'sns',1,100)?></h2>
+</div>
 <div class="container margin-top-100 margin-bottom-120">
-	<h3 class="text-left">GALLERY</h3>
-	<?php echo latest('theme/pic_basic_owl', 'gallery', 9, 24); ?>
+	<?php echo latest('sns', 'gallery', 6, 100); ?>
 </div>
 
 
