@@ -30,7 +30,7 @@ $thumb_height = 300;
 			<div class="card-body">
 			  <h5 class="card-title ks4 f17">
 					<?php
-					echo "<a href=\"".$list[$i]['href']."\"> ";
+					echo "/";
 					if ($list[$i]['is_notice'])
 					echo "<strong>".$list[$i]['subject']."</strong>";
 					else
