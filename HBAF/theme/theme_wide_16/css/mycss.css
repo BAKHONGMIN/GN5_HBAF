@@ -5,6 +5,9 @@
     font-weight: bold;
     color: black !important;
 }
+.d-flex{
+    display: flex;
+}
 .backimg{
     background-image: url(/HBAF/theme/theme_wide_16/myimg/bg_header.png);
     background-repeat: no-repeat;
@@ -65,6 +68,9 @@
     .youtube-window{
         display: none;
     }
+    .display{
+        display: block;
+    }
 }
 
 
@@ -87,6 +93,18 @@
         transform: translate(-50%, -50%);
         font-weight: bold;
         font-size: 4rem;
+    }
+    .display{
+        display: flex;
+    }
+    .footer_bak{
+        font-size: 5rem;
+        padding:30px 0;
+        vertical-align: center;
+    }
+    .footer_text{
+        padding:50px 0;
+        vertical-align: center;
     }
 }
 
@@ -186,4 +204,8 @@
     top: 50%;
     transform: translateY(-50%);
     right: 20px;
+}
+footer{
+    background-color: white;
+    border-top: 2px solid black;
 }
